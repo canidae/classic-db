@@ -99,7 +99,7 @@ fi
 
 . $CONFIG_FILE
 export MYSQL_PWD="$PASSWORD"
-MYSQL_COMMAND="$MYSQL -h$DB_HOST -P$DB_PORT -u$USERNAME $DATABASE"
+MYSQL_COMMAND="mysql classicmangos"
 
 ## Print header
 echo
