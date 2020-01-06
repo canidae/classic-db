@@ -11790,7 +11790,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Tanaris
 -- =======
--- Silithid Swarm (4196) - NSR
 -- Shreev (4708) - NSR
 -- Prospector Gunstan (5389) - NSR
 -- Riding White Stallion (5403) - NSR
@@ -12409,8 +12408,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('325101','3251','9','0','100','1','35','40','1000','1000','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
 ('325102','3251','7','0','100','0','0','0','0','0','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
 -- Silithid Swarmer 3252
-('325201','3252','0','0','100','1','7000','15000','8000','16000','0','0','11','6589','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm'),
-('325202','3252','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Despawn Guardians on Evade'),
+('325201','3252','1','0','100','0','1000','1000','0','0','0','0','11','10722','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm OOC'),
+('325202','3252','0','0','100','1025','7000','15000','1100','8500','0','0','11','6589','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm'),
 -- Silithid Harvester 3253
 ('325301','3253','0','0','100','1','12000','18000','25000','35000','0','0','11','7278','0','0','0','0','0','0','0','0','0','0','Silithid Harvester - Cast Summon Harvester Swarm'),
 -- Sunscale Lashtail 3254
@@ -17562,14 +17561,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ossirian the Unscarred (15339) - boss_ossirian
 -- Moam (15340) - boss_moam
 -- General Rajaxx
-('1534101','15341','4','0','100','0','0','0','0','0','0','0','1','-701','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Yell on Aggro'),
-('1534102','15341','9','0','100','1025','0','5','7000','9000','0','0','11','6713','4','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Disarm'),
-('1534103','15341','0','0','100','1025','12000','18000','16000','21000','0','0','11','25599','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Thundercrash'),
-('1534104','15341','0','0','100','1025','30000','60000','45000','60000','0','0','13','-99','1','0','1','-703','0','0','0','0','0','0','General Rajaxx - Drop Aggro and Yell'),
-('1534105','15341','9','0','100','1025','50','120','8000','12000','0','0','11','20477','9','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Summon Player'),
-('1534106','15341','0','0','100','1025','600000','600000','120000','120000','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','General Rajaxx - Cast Frenzy after 10 Minutes'),
-('1534107','15341','6','0','100','0','0','0','0','0','0','0','1','-702','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Yell on Death'),
-('1534108','15341','11','0','100','0','0','0','0','0','0','0','11','18943','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Double Attack on Spawn'),
+('1534101','15341','9','0','100','1025','0','5','7000','9000','0','0','11','6713','4','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Disarm'),
+('1534102','15341','0','0','100','1025','12000','18000','16000','21000','0','0','11','25599','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Thundercrash'),
+('1534103','15341','0','0','100','1025','30000','60000','45000','60000','0','0','13','-99','1','0','1','-703','0','0','0','0','0','0','General Rajaxx - Drop Aggro and Yell'),
+('1534104','15341','9','0','100','1025','50','120','8000','12000','0','0','11','20477','9','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Summon Player'),
+('1534105','15341','0','0','100','1025','600000','600000','120000','120000','0','0','11','8269','0','1','-106','0','0','0','0','0','0','0','General Rajaxx - Cast Frenzy after 10 Minutes'),
+('1534106','15341','6','0','100','0','0','0','0','0','0','0','1','-702','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Yell on Death'),
+('1534107','15341','11','0','100','0','0','0','0','0','0','0','11','18943','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Double Attack on Spawn'),
 -- Qiraji Swarmguard
 ('1534301','15343','9','0','100','1','0','5','8000','12000','0','0','11','25174','4','0','0','0','0','0','0','0','0','0','Qiraji Swarmguard - Cast Sundering Cleave'),
 -- Swarmguard Needler
@@ -17855,8 +17853,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1563001','15630','0','0','100','0','20000','20000','0','0','0','0','11','26662','0','0','1','-106','0','0','0','0','0','0','Spawn of Fankriss - Cast Berserk'),
 -- Glob of Viscidus (15667) - THIS NPC IS PART OF Viscidus (15299) ENCOUNTER SO MAY ALSO REQUIRE SD2 SCRIPTING
 -- Dirt Mound
-('1571201','15712','1','0','100','1','1000','1000','1000','1000','0','0','11','26093','0','0','0','0','0','0','0','0','0','0','Dirt Mound - Cast Quake'),
-('1571202','15712','1','0','100','0','30000','30000','0','0','0','0','11','26060','0','0','41','1000','0','0','0','0','0','0','Dirt Mound - Cast Summon Ouro Scarabs and Forced Despawn'),
 -- Ouro Scarab
 ('1571801','15718','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Ouro Scarab - Set In combat with Zone on Spawn'),
 ('1571802','15718','9','0','100','1','60','120','5000','10000','0','0','11','20477','1','1','0','0','0','0','0','0','0','0','Ouro Scarab - Cast Summon Player at 60 Yards'),
@@ -18601,6 +18597,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Infernal 89 - NSR
 -- Imp 416 - PetAI
+-- Silithid Swarm 4196
+('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
+('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Archery Target 5202
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
 -- Earthgrab Totem 6066 -- Cannot use TotemAI due to the way this NPC is summoned
