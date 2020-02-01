@@ -26,7 +26,7 @@ USERNAME=""
 PASSWORD=""
 MYSQL=""
 CORE_PATH=""
-DEV_UPDATES="NO"
+DEV_UPDATES="YES"
 FORCE_WAIT="YES"
 
 function create_config {
@@ -73,7 +73,7 @@ FORCE_WAIT="YES"
 
 ## Define if the 'dev' directory for processing development SQL files needs to be used
 ##   Set the variable to "YES" to use the dev directory
-DEV_UPDATES="NO"
+DEV_UPDATES="YES"
 
 # Enjoy using the tool
 EOF
