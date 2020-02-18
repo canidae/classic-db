@@ -1,1 +1,0 @@
---UPDATE quest_template SET requiredclasses=0 WHERE title LIKE '%An Earnest Proposition%';
